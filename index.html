@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LaDora Hannebaum – Web Developer & Digital Marketing</title>
+  <meta name="description" content="My web development journey, core skills, and career goals. Based in Issaquah, WA.">
+  
+  <style>
+    :root {
+      --ink: #0f172a;
+      --brand: #0ea5a8;
+      --brand-2: #22d3ee;
+      --bg-soft: #e0f2fe;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, system-ui, sans-serif;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    img, svg { max-width: 100%; height: auto; border-radius: 12px; }
+    .container { max-width: 50em; padding: 1rem; margin: 0 auto; }
+
+    .site-header {
+      background: linear-gradient(90deg, var(--brand) 0%, var(--brand-2) 100%);
+      color: white;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 0;
+    }
+
+    .brand img {
+      max-width: 80px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .brand__title {
+      font-family: Merriweather, Georgia, serif;
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+
+    .nav {
+      display: flex;
+      gap: .75rem;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: .5rem .75rem;
+      border-radius: 8px;
+    }
+    .nav a[aria-current="page"], .nav a:hover, .nav a:focus {
+      background: rgba(255,255,255,.18);
+      outline: none;
+    }
+
+    .section { padding: 2rem 0; background: var(--paper); }
+    .section--alt { background: var(--bg-soft); }
+    .hero { display: grid; gap: 1.5rem; align-items: center; }
+    .hero__media { justify-self: center; }
+
+    .card-grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 1rem;
+      background: #fff;
+      box-shadow: 0 6px 18px rgba(2,6,23,.05);
+    }
+    .card h3 {
+      margin-top: .25rem;
+      font-family: Merriweather, Georgia, serif;
+    }
+    .card p { margin: .5rem 0 1rem; }
+    .card .meta { font-size: .9rem; color: #334155; }
+
+    .button {
+      display: inline-block;
+      padding: .6rem .9rem;
+      border-radius: 10px;
+      text-decoration: none;
+      background: var(--ink);
+      color: white;
+      font-weight: 700;
+    }
+    .button:hover, .button:focus { background: #111827; }
+
+    .site-footer {
+      border-top: 1px solid #e2e8f0;
+      margin-top: 2rem;
+    }
+    .site-footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem 1rem;
+    }
+    .site-footer small { color: #475569; }
+
+    .visually-hidden {
+      position: absolute !important;
+      height: 1px; width: 1px;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      white-space: nowrap;
+    }
+    .external::after { content: "↗"; margin-left: .25rem; font-size: .9em; }
+
+    @media (min-width: 800px) {
+      .hero { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="visually-hidden" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="brand" role="banner">
+        <img src="imgs/headshot.png" alt="LaDora's Headshot">
+        <h1 class="brand__title">LaDora Hannebaum</h1>
+      </div>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a class="external" href="https://www.linkedin.com/in/ladora-hannebaum-4605a9307/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section hero">
+      <div class="container hero">
+        <div class="hero__media">
+          <div>
+            <h2>Web Developer in Training &bull; Digital Marketing Focus</h2>
+            <p>
+              I blend emerging front-end skills with real-world marketing experience to build usable, accessible, and search-aware websites.
+              Based in Issaquah, Washington, I study Digital Marketing at Bellevue College and I am developing proficiency in HTML, CSS, and web accessibility.
+            </p>
+            <p>
+              <strong>Contact:</strong>
+              <a href="mailto:ladoraleehannebaum@gmail.com">ladoraleehannebaum@gmail.com</a> &bull; Issaquah, WA
+            </p>
+            <p>
+              <a class="button" href="portfolio.html">View My Projects</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2>What I Bring</h2>
+        <ul>
+          <li>Semantic, accessible HTML with descriptive alt text and proper document structure.</li>
+          <li>Responsive layouts with modern CSS and Flexbox.</li>
+          <li>Marketing-aware content strategy and on-page SEO fundamentals.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Three Core Concepts I Demonstrate</h2>
+        <article>
+          <h3>1) Semantic HTML & Accessibility</h3>
+          <p>
+            I structure pages with <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and meaningful headings so assistive technologies convey clear hierarchy.
+            I write concise, purpose-driven alt text and ensure sufficient color contrast.
+          </p>
+        </article>
+        <article>
+          <h3>2) Readable Typography</h3>
+          <p>
+            I apply left-aligned body copy, a max line width of ~50em, and 1.5 line height to support comfortable scanning and comprehension across devices.
+          </p>
+        </article>
+        <article>
+          <h3>3) Responsive Layouts with Flexbox</h3>
+          <p>
+            I use Flexbox for intuitive navigation and grid-like arrangements that adapt to various screen sizes without layout thrash.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2025 LaDora Hannebaum</small>
+      <small>
+        Images: Self-created SVG placeholders (CC0). I may replace these with photos/screenshots and will cite the source + license.
+      </small>
+    </div>
+  </footer>
+</body>
+</html>
